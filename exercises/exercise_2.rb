@@ -9,5 +9,3 @@ puts "----------"
 @store2 = Store.find_by(id:2)
 @store1.womens_apparel = false
 @store1.save
-
-p @store1
