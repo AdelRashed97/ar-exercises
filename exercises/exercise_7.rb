@@ -10,3 +10,11 @@ puts "Exercise 7"
 puts "----------"
 
 # Your code goes here ...
+puts "Input a store name"
+store_name = $stdin.gets.chomp
+store = Store.create()
+if (!store.valid?)
+   store.errors.messages.each_pair{|attribute,message| puts "Attribute: #{attribute} \n #{message.join(" ")}"}
+  
+  
+end
